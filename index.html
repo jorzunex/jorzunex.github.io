@@ -10,7 +10,17 @@
 <meta property="og:description" content="Software a medida + Inteligencia Artificial. Soluciones digitales que transforman tu negocio.">
 <meta property="og:image" content="https://jorzunex.github.io/assets/logo.png">
 <meta property="og:url" content="https://jorzunex.github.io/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JorZunex Solutions – AI & Software">
+<meta name="twitter:description" content="Software a medida + Inteligencia Artificial. Soluciones digitales que transforman tu negocio.">
+<meta name="twitter:image" content="https://jorzunex.github.io/assets/logo.png">
+<link rel="canonical" href="https://jorzunex.github.io/">
 <link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preload" as="image" href="assets/logo.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"JorZunex Solutions","url":"https://jorzunex.github.io/","logo":"https://jorzunex.github.io/assets/logo.png","email":"jorzunexsolutions@gmail.com","telephone":"+573245003522","description":"Desarrollo de software a medida y soluciones de Inteligencia Artificial.","address":{"@type":"PostalAddress","addressCountry":"CO"},"sameAs":["https://github.com/jorzunex","https://instagram.com/JorZunexSolutions"]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -235,8 +245,8 @@ section{position:relative;z-index:2}
 .proj-chrome i:nth-child(1){background:#ff5f57}.proj-chrome i:nth-child(2){background:#febc2e}.proj-chrome i:nth-child(3){background:#28c840}
 .proj-chrome span{margin-left:10px;font-family:'IBM Plex Mono',monospace;font-size:.64rem;color:var(--text-dim);letter-spacing:.5px;background:rgba(0,200,255,.05);border:1px solid rgba(0,200,255,.1);border-radius:6px;padding:3px 12px;flex:1;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .proj-thumb{width:100%;height:200px;overflow:hidden;position:relative;background:var(--bg3)}
-.proj-thumb iframe{width:160%;height:160%;border:none;pointer-events:none;transform:scale(.625);transform-origin:top left;transition:transform .6s var(--ease)}
-.proj-card:hover .proj-thumb iframe{transform:scale(.66)}
+.proj-thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s var(--ease)}
+.proj-card:hover .proj-thumb img{transform:scale(1.06)}
 .proj-thumb-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 35%,rgba(8,16,32,.96));z-index:1}
 .proj-body{padding:24px 26px 28px}
 .proj-badge{display:inline-flex;align-items:center;gap:7px;font-family:'IBM Plex Mono',monospace;font-size:.64rem;letter-spacing:1.4px;color:#3ee886;text-transform:uppercase;margin-bottom:12px;background:rgba(62,232,134,.06);border:1px solid rgba(62,232,134,.22);border-radius:20px;padding:5px 13px}
@@ -600,7 +610,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
       <div class="proj-card tilt reveal d1">
         <div class="proj-chrome"><i></i><i></i><i></i><span>gym-app-web-chi.vercel.app</span></div>
         <div class="proj-thumb">
-          <iframe src="https://gym-app-web-chi.vercel.app/" loading="lazy" title="PowerFit GymApp" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+          <img src="assets/proj-powerfit.jpg" alt="PowerFit GymApp" loading="lazy" decoding="async">
           <div class="proj-thumb-overlay"></div>
         </div>
         <div class="proj-body">
@@ -617,7 +627,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
       <div class="proj-card tilt reveal d2">
         <div class="proj-chrome"><i></i><i></i><i></i><span>customer-app-gold.vercel.app</span></div>
         <div class="proj-thumb">
-          <iframe src="https://customer-app-gold.vercel.app/" loading="lazy" title="RepartOS" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+          <img src="assets/proj-repartos.jpg" alt="RepartOS" loading="lazy" decoding="async">
           <div class="proj-thumb-overlay"></div>
         </div>
         <div class="proj-body">
@@ -634,7 +644,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
       <div class="proj-card tilt reveal d3">
         <div class="proj-chrome"><i></i><i></i><i></i><span>motogest-web.vercel.app</span></div>
         <div class="proj-thumb">
-          <iframe src="https://motogest-web.vercel.app/" loading="lazy" title="MotoGest Pro" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+          <img src="assets/proj-motogest.jpg" alt="MotoGest Pro" loading="lazy" decoding="async">
           <div class="proj-thumb-overlay"></div>
         </div>
         <div class="proj-body">
@@ -724,11 +734,10 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
   <span class="f-mark" aria-hidden="true">JORZUNEX</span>
   <div class="f-inner">
     <span class="f-brand">JorZunex Solutions</span>
-    <p class="f-copy" data-k="fcp">&#169; 2025 JorZunex Solutions. Todos los derechos reservados.</p>
+    <p class="f-copy" data-k="fcp">&#169; 2026 JorZunex Solutions. Todos los derechos reservados.</p>
     <div class="f-links">
       <a href="https://github.com/jorzunex" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> GitHub</a>
       <a href="https://instagram.com/JorZunexSolutions" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg> Instagram</a>
-      <a href="#" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg> LinkedIn</a>
     </div>
   </div>
 </footer>
@@ -778,7 +787,7 @@ const T = {
     ci_hrs:'Disponibilidad',ci_hrsv:'24 horas · 7 días a la semana',
     ft:'Envíanos un mensaje',fn:'Nombre',fe:'Email',fc:'Empresa (opcional)',
     fs:'Servicio de interés',fso:'Selecciona un servicio',fm:'Mensaje',
-    fbtn:'Enviar mensaje →',fcp:'© 2025 JorZunex Solutions. Todos los derechos reservados.'
+    fbtn:'Enviar mensaje →',fcp:'© 2026 JorZunex Solutions. Todos los derechos reservados.'
   },
   en:{
     nav_svc:'Services',nav_abt:'About',nav_prj:'Projects',nav_cnt:'Contact',
@@ -822,7 +831,7 @@ const T = {
     ci_hrs:'Availability',ci_hrsv:'24 hours · 7 days a week',
     ft:'Send us a message',fn:'Name',fe:'Email',fc:'Company (optional)',
     fs:'Service of interest',fso:'Select a service',fm:'Message',
-    fbtn:'Send message →',fcp:'© 2025 JorZunex Solutions. All rights reserved.'
+    fbtn:'Send message →',fcp:'© 2026 JorZunex Solutions. All rights reserved.'
   }
 };
 const TYPE_WORDS = {
