@@ -30,8 +30,8 @@
   --ease:cubic-bezier(.22,1,.36,1);
 }
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);overflow-x:clip;line-height:1.6}
 ::selection{background:rgba(0,200,255,.25);color:#fff}
 ::-webkit-scrollbar{width:6px}
 ::-webkit-scrollbar-track{background:var(--bg)}
@@ -101,7 +101,7 @@ nav.scrolled{background:rgba(5,10,22,.85);border-color:rgba(0,200,255,.22);box-s
 /* ════════════════════ HERO ════════════════════ */
 #hero{min-height:100svh;display:flex;align-items:center;position:relative;z-index:2;padding:150px 0 90px}
 .hero-inner{width:min(1180px,calc(100% - 48px));margin:0 auto;display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center}
-.hero-chip{display:inline-flex;align-items:center;gap:9px;background:rgba(0,200,255,.07);border:1px solid var(--border);border-radius:30px;padding:8px 18px;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--neon);letter-spacing:1px;margin-bottom:30px;backdrop-filter:blur(8px)}
+.hero-chip{display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px 9px;max-width:100%;background:rgba(0,200,255,.07);border:1px solid var(--border);border-radius:30px;padding:8px 18px;font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--neon);letter-spacing:1px;margin-bottom:30px;backdrop-filter:blur(8px);text-align:center}
 .dot-pulse{width:7px;height:7px;background:var(--neon);border-radius:50%;animation:pulse 1.6s infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(0,200,255,.6)}50%{box-shadow:0 0 0 7px rgba(0,200,255,0)}}
 .hero-h1{font-family:'Syne',sans-serif;font-size:clamp(2.5rem,5.6vw,4.6rem);font-weight:800;line-height:1.04;letter-spacing:-2.5px;margin-bottom:26px}
@@ -227,7 +227,7 @@ section{position:relative;z-index:2}
 .t-git svg{width:14px;height:14px}
 
 /* ════════════════════ PROJECTS ════════════════════ */
-.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .proj-card{position:relative;background:var(--card);border:1px solid var(--border);border-radius:24px;overflow:hidden;backdrop-filter:blur(14px);transition:transform .45s var(--ease),border-color .4s,box-shadow .45s;will-change:transform}
 .proj-card:hover{border-color:rgba(0,200,255,.38);box-shadow:0 28px 70px rgba(0,0,0,.5),0 0 50px rgba(0,200,255,.07)}
 .proj-chrome{display:flex;align-items:center;gap:6px;padding:11px 16px;background:rgba(5,10,22,.85);border-bottom:1px solid var(--border)}
@@ -319,6 +319,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
   .hero-term{display:none}
   .svc-grid{grid-template-columns:1fr 1fr}
   .svc-card.wide{grid-column:span 2}
+  .proj-grid{grid-template-columns:1fr}
 }
 @media(max-width:900px){
   .nav-right{position:fixed;inset:0;background:rgba(4,8,16,.96);backdrop-filter:blur(24px);flex-direction:column;align-items:center;justify-content:center;gap:34px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;border-radius:0}
@@ -341,16 +342,33 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
   .to-top{bottom:96px;left:auto;right:31px}
 }
 @media(max-width:640px){
-  #hero{padding:130px 0 70px}
-  .hero-h1{letter-spacing:-1px}
+  #hero{padding:116px 0 54px}
+  .hero-inner{width:calc(100% - 40px);gap:24px}
+  .hero-chip{font-size:.6rem;padding:7px 13px;letter-spacing:.6px;margin-bottom:22px}
+  .hero-h1{font-size:clamp(2.05rem,9vw,2.6rem);letter-spacing:-1px;margin-bottom:20px}
+  .hero-sub{font-size:.95rem;margin-bottom:30px}
   .hero-btns{flex-direction:column;align-items:center}
   .btn-primary,.btn-ghost{width:100%;max-width:320px;text-align:center;justify-content:center}
   .scroll-ind{display:none}
   .svc-grid{grid-template-columns:1fr}
   .svc-card.wide{grid-column:span 1}
-  .hero-orb{transform:scale(.68);min-height:280px}
-  .c-form{padding:28px 22px}
-  .cta-banner{padding:56px 24px}
+  .hero-orb{order:1;transform:none;min-height:310px;margin-top:4px}
+  .orb-glow{width:230px;height:230px}
+  .orb-logo{width:148px}
+  .orbit.o1{width:235px;height:235px}
+  .orbit.o2{width:305px;height:305px}
+  .orb-tag{font-size:.6rem;padding:5px 10px}
+  .orb-tag.t1{top:5%;left:4%}
+  .orb-tag.t2{bottom:7%;right:4%}
+  .aurora i{filter:blur(70px);opacity:.26}
+  .wrap{padding:70px 20px}
+  .sec-sub{margin-bottom:44px}
+  .c-form{padding:28px 20px}
+  .cta-banner{padding:54px 22px}
+  .proj-body{padding:22px 20px 24px}
+  .wa{width:50px;height:50px;bottom:20px;right:20px}
+  .wa svg{width:25px;height:25px}
+  .to-top{bottom:84px;right:23px}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -613,6 +631,23 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
       </div>
 
+      <div class="proj-card tilt reveal d3">
+        <div class="proj-chrome"><i></i><i></i><i></i><span>motogest-web.vercel.app</span></div>
+        <div class="proj-thumb">
+          <iframe src="https://motogest-web.vercel.app/" loading="lazy" title="MotoGest Pro" scrolling="no" tabindex="-1" aria-hidden="true"></iframe>
+          <div class="proj-thumb-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-badge"><span></span><i data-k="prj_badge3">En producci&#243;n</i></div>
+          <p class="proj-title">MotoGest Pro &mdash; <span data-k="p3st">Gesti&#243;n de Talleres</span></p>
+          <p class="proj-desc" data-k="p3d">Sistema integral para talleres de motos: &#243;rdenes de trabajo, clientes, inventario de repuestos y reportes en tiempo real. El taller completo, en una sola pantalla.</p>
+          <div class="proj-tags">
+            <span class="tag">SaaS</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Vercel</span>
+          </div>
+          <a class="proj-link" href="https://motogest-web.vercel.app/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> <span data-k="prj_live3">Ver en vivo</span></a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -727,11 +762,13 @@ const T = {
     sl_team:'El equipo',
     sl_prj:'Algunos de nuestros proyectos',pt_a:'Lo que',pt_b:'hemos construido',
     ss_prj:'Productos reales, con usuarios reales. Soluciones que llevamos a producción y siguen creciendo.',
-    prj_badge:'En producción',prj_badge2:'En producción',prj_live:'Ver en vivo',prj_live2:'Ver en vivo',
+    prj_badge:'En producción',prj_badge2:'En producción',prj_badge3:'En producción',prj_live:'Ver en vivo',prj_live2:'Ver en vivo',prj_live3:'Ver en vivo',
     p1st:'Plataforma de Gym',
     p1d:'Aplicación web completa para gestión de gimnasios: registro de clientes, planes personalizados, cálculo de IMC en tiempo real, seguimiento de progreso y panel de administración. Todo en una sola plataforma.',
     p2st:'Menú Digital con IA',
     p2d:'SaaS para comercios colombianos: menú digital vía QR, pedidos en tiempo real, pantalla KDS para cocina, chatbot con IA y panel admin completo. Sin instalaciones, sin fricción.',
+    p3st:'Gestión de Talleres',
+    p3d:'Sistema integral para talleres de motos: órdenes de trabajo, clientes, inventario de repuestos y reportes en tiempo real. El taller completo, en una sola pantalla.',
     cta_a:'¿Listo para construir algo',cta_b:'increíble',cta_c:'?',
     cta_d:'Tu próximo producto digital empieza con una conversación. Sin compromiso, sin costo inicial.',
     cta_btn:'Iniciar proyecto →',
@@ -769,11 +806,13 @@ const T = {
     sl_team:'The team',
     sl_prj:'Some of our projects',pt_a:'What we have',pt_b:'built',
     ss_prj:'Real products, with real users. Solutions we shipped to production that keep growing.',
-    prj_badge:'In production',prj_badge2:'In production',prj_live:'View live',prj_live2:'View live',
+    prj_badge:'In production',prj_badge2:'In production',prj_badge3:'In production',prj_live:'View live',prj_live2:'View live',prj_live3:'View live',
     p1st:'Gym Platform',
     p1d:'Complete web app for gym management: client registration, custom plans, real-time BMI calculation, progress tracking and a full admin panel. All in one platform.',
     p2st:'AI Digital Menu',
     p2d:'SaaS for Colombian businesses: QR digital menu, real-time orders, kitchen KDS screen, AI chatbot and full admin panel. No installs, no friction.',
+    p3st:'Workshop Management',
+    p3d:'All-in-one system for motorcycle workshops: work orders, customers, parts inventory and real-time reports. The whole workshop, on a single screen.',
     cta_a:'Ready to build something',cta_b:'incredible',cta_c:'?',
     cta_d:'Your next digital product starts with a conversation. No commitment, no upfront cost.',
     cta_btn:'Start a project →',
