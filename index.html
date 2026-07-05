@@ -8,13 +8,17 @@
 <meta name="theme-color" content="#040810">
 <meta property="og:title" content="JorZunex Solutions – AI & Software">
 <meta property="og:description" content="Software a medida + Inteligencia Artificial. Soluciones digitales que transforman tu negocio.">
-<meta property="og:image" content="https://jorzunex.github.io/assets/logo.png">
+<meta property="og:image" content="https://jorzunex.github.io/assets/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:url" content="https://jorzunex.github.io/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="JorZunex Solutions">
+<meta property="og:locale" content="es_CO">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="JorZunex Solutions – AI & Software">
 <meta name="twitter:description" content="Software a medida + Inteligencia Artificial. Soluciones digitales que transforman tu negocio.">
-<meta name="twitter:image" content="https://jorzunex.github.io/assets/logo.png">
+<meta name="twitter:image" content="https://jorzunex.github.io/assets/og-cover.jpg">
 <link rel="canonical" href="https://jorzunex.github.io/">
 <link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preload" as="image" href="assets/logo.png">
@@ -24,8 +28,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init('IXjM3kCPhMiyuPWWH');</script>
+<script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <style>
 /* ════════════════════ TOKENS ════════════════════ */
 :root{
@@ -440,7 +443,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
       <button class="lang-btn" onclick="setLang('en')">EN</button>
     </div>
   </div>
-  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú"><span></span><span></span><span></span></button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menú" aria-expanded="false" aria-controls="navRight"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -500,42 +503,42 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
       <div class="svc-card wide spot tilt reveal d1">
         <span class="svc-num">01</span>
         <div class="svc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="7.5" cy="10" r="1" fill="currentColor" stroke="none"/><path d="M10 10h7"/></svg></div>
-        <p class="svc-title" data-k="s1t">Desarrollo Web</p>
+        <h3 class="svc-title" data-k="s1t">Desarrollo Web</h3>
         <p class="svc-desc" data-k="s1d">Aplicaciones web modernas, r&#225;pidas y escalables. Desde MVPs hasta plataformas empresariales.</p>
         <div class="svc-tags"><span class="tag">React</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js</span></div>
       </div>
       <div class="svc-card spot tilt reveal d2">
         <span class="svc-num">02</span>
         <div class="svc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4v1h1a3 3 0 0 1 0 6h-1v1a4 4 0 0 1-8 0v-1H7a3 3 0 0 1 0-6h1V6a4 4 0 0 1 4-4z"/><path d="M9 12h.01M15 12h.01M12 15h.01"/></svg></div>
-        <p class="svc-title" data-k="s2t">Soluciones de IA</p>
+        <h3 class="svc-title" data-k="s2t">Soluciones de IA</h3>
         <p class="svc-desc" data-k="s2d">Modelos de lenguaje, automatizaci&#243;n inteligente, chatbots y an&#225;lisis predictivo para tu negocio.</p>
         <div class="svc-tags"><span class="tag">LLMs</span><span class="tag">NLP</span><span class="tag">ML</span><span class="tag">Python</span></div>
       </div>
       <div class="svc-card spot tilt reveal d1">
         <span class="svc-num">03</span>
         <div class="svc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
-        <p class="svc-title" data-k="s3t">Apps M&#243;viles</p>
+        <h3 class="svc-title" data-k="s3t">Apps M&#243;viles</h3>
         <p class="svc-desc" data-k="s3d">Aplicaciones iOS y Android nativas, integradas con servicios en la nube y backend robusto.</p>
         <div class="svc-tags"><span class="tag">React Native</span><span class="tag">Flutter</span><span class="tag">Firebase</span></div>
       </div>
       <div class="svc-card spot tilt reveal d2">
         <span class="svc-num">04</span>
         <div class="svc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 0 1 0 9z"/></svg></div>
-        <p class="svc-title" data-k="s4t">Cloud &amp; DevOps</p>
+        <h3 class="svc-title" data-k="s4t">Cloud &amp; DevOps</h3>
         <p class="svc-desc" data-k="s4d">Infraestructura en la nube, CI/CD, contenedores y monitoreo continuo de alto rendimiento.</p>
         <div class="svc-tags"><span class="tag">AWS</span><span class="tag">Docker</span><span class="tag">Kubernetes</span></div>
       </div>
       <div class="svc-card spot tilt reveal d3">
         <span class="svc-num">05</span>
         <div class="svc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 16l4-4 4 4 4-6"/></svg></div>
-        <p class="svc-title" data-k="s5t">Data &amp; Analytics</p>
+        <h3 class="svc-title" data-k="s5t">Data &amp; Analytics</h3>
         <p class="svc-desc" data-k="s5d">Dashboards en tiempo real y reportes inteligentes que convierten datos en decisiones.</p>
         <div class="svc-tags"><span class="tag">PostgreSQL</span><span class="tag">Python</span><span class="tag">Power BI</span></div>
       </div>
       <div class="svc-card spot tilt reveal d4">
         <span class="svc-num">06</span>
         <div class="svc-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <p class="svc-title" data-k="s6t">Ciberseguridad</p>
+        <h3 class="svc-title" data-k="s6t">Ciberseguridad</h3>
         <p class="svc-desc" data-k="s6d">Auditor&#237;as, pentesting y protecci&#243;n de datos para blindar tu negocio digital.</p>
         <div class="svc-tags"><span class="tag">Pentesting</span><span class="tag">OWASP</span><span class="tag">ISO 27001</span></div>
       </div>
@@ -586,13 +589,13 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
     <div class="team-grid">
       <div class="team-card reveal d1">
         <div class="t-photo-wrap"><img class="t-photo" src="assets/team-jose.jpg" alt="Jose Manuel Zuluaga Figueroa"></div>
-        <p class="t-name">Jose Manuel Zuluaga Figueroa</p>
+        <h3 class="t-name">Jose Manuel Zuluaga Figueroa</h3>
         <p class="t-role">Systems Engineer &amp; Developer</p>
         <a class="t-git" href="https://github.com/elzulu" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> github.com/elzulu</a>
       </div>
       <div class="team-card reveal d2">
         <div class="t-photo-wrap"><img class="t-photo" src="assets/team-jorge.jpg" alt="Jorge Andres Carmona Ramirez"></div>
-        <p class="t-name">Jorge Andres Carmona Ramirez</p>
+        <h3 class="t-name">Jorge Andres Carmona Ramirez</h3>
         <p class="t-role">Systems Engineer &amp; Developer</p>
         <a class="t-git" href="https://github.com/jorgeR03" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg> github.com/jorgeR03</a>
       </div>
@@ -616,7 +619,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
         <div class="proj-body">
           <div class="proj-badge"><span></span><i data-k="prj_badge">En producci&#243;n</i></div>
-          <p class="proj-title">PowerFit &mdash; <span data-k="p1st">Plataforma de Gym</span></p>
+          <h3 class="proj-title">PowerFit &mdash; <span data-k="p1st">Plataforma de Gym</span></h3>
           <p class="proj-desc" data-k="p1d">Aplicaci&#243;n web completa para gesti&#243;n de gimnasios: registro de clientes, planes personalizados, c&#225;lculo de IMC en tiempo real, seguimiento de progreso y panel de administraci&#243;n. Todo en una sola plataforma.</p>
           <div class="proj-tags">
             <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Vercel</span>
@@ -633,7 +636,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
         <div class="proj-body">
           <div class="proj-badge"><span></span><i data-k="prj_badge2">En producci&#243;n</i></div>
-          <p class="proj-title">RepartOS &mdash; <span data-k="p2st">Men&#250; Digital con IA</span></p>
+          <h3 class="proj-title">RepartOS &mdash; <span data-k="p2st">Men&#250; Digital con IA</span></h3>
           <p class="proj-desc" data-k="p2d">SaaS para comercios colombianos: men&#250; digital v&#237;a QR, pedidos en tiempo real, pantalla KDS para cocina, chatbot con IA y panel admin completo. Sin instalaciones, sin fricci&#243;n.</p>
           <div class="proj-tags">
             <span class="tag">SaaS</span><span class="tag">IA / Chatbot</span><span class="tag">QR</span><span class="tag">React</span><span class="tag">Java 21 + Spring Boot</span>
@@ -650,7 +653,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
         <div class="proj-body">
           <div class="proj-badge"><span></span><i data-k="prj_badge3">En producci&#243;n</i></div>
-          <p class="proj-title">MotoGest Pro &mdash; <span data-k="p3st">Gesti&#243;n de Talleres</span></p>
+          <h3 class="proj-title">MotoGest Pro &mdash; <span data-k="p3st">Gesti&#243;n de Talleres</span></h3>
           <p class="proj-desc" data-k="p3d">Sistema integral para talleres de motos: &#243;rdenes de trabajo, clientes, inventario de repuestos y reportes en tiempo real. El taller completo, en una sola pantalla.</p>
           <div class="proj-tags">
             <span class="tag">SaaS</span><span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">Vercel</span>
@@ -667,7 +670,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
         <div class="proj-body">
           <div class="proj-badge"><span></span><i data-k="prj_badge4">En producci&#243;n</i></div>
-          <p class="proj-title">JorZunex Inmobiliaria &mdash; <span data-k="p4st">Portal de Propiedades</span></p>
+          <h3 class="proj-title">JorZunex Inmobiliaria &mdash; <span data-k="p4st">Portal de Propiedades</span></h3>
           <p class="proj-desc" data-k="p4d">Portal inmobiliario premium para Colombia: b&#250;squeda inteligente de propiedades, tours 3D inmersivos, contratos digitales y an&#225;lisis de inversi&#243;n. Compra, arrienda o vende sin fricciones.</p>
           <div class="proj-tags">
             <span class="tag">Portal</span><span class="tag">React</span><span class="tag">Tours 3D</span><span class="tag">Vercel</span>
@@ -684,7 +687,7 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
         <div class="proj-body">
           <div class="proj-badge"><span></span><i data-k="prj_badge5">En producci&#243;n</i></div>
-          <p class="proj-title">PharmaPOS &mdash; <span data-k="p5st">Gesti&#243;n de Farmacias</span></p>
+          <h3 class="proj-title">PharmaPOS &mdash; <span data-k="p5st">Gesti&#243;n de Farmacias</span></h3>
           <p class="proj-desc" data-k="p5d">POS inteligente para farmacias en LATAM: ventas, inventario predictivo con IA, alertas de stock y facturaci&#243;n electr&#243;nica DIAN. La farmacia moderna, sin complicaciones.</p>
           <div class="proj-tags">
             <span class="tag">POS</span><span class="tag">IA</span><span class="tag">React</span><span class="tag">Vercel</span>
@@ -742,21 +745,21 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </a>
       </div>
       <div class="c-form reveal d3">
-        <p class="f-title" data-k="ft">Env&#237;anos un mensaje</p>
+        <h3 class="f-title" data-k="ft">Env&#237;anos un mensaje</h3>
         <div class="f-row">
-          <div class="f-group"><label data-k="fn">Nombre</label><input id="fn" type="text" placeholder="Tu nombre"></div>
-          <div class="f-group"><label data-k="fe">Email</label><input id="fe" type="email" placeholder="tu@email.com"></div>
+          <div class="f-group"><label for="fn" data-k="fn">Nombre</label><input id="fn" type="text" name="name" autocomplete="name" placeholder="Tu nombre"></div>
+          <div class="f-group"><label for="fe" data-k="fe">Email</label><input id="fe" type="email" name="email" autocomplete="email" placeholder="tu@email.com"></div>
         </div>
-        <div class="f-group"><label data-k="fc">Empresa (opcional)</label><input id="fc" type="text" placeholder="Tu empresa"></div>
+        <div class="f-group"><label for="fc" data-k="fc">Empresa (opcional)</label><input id="fc" type="text" name="organization" autocomplete="organization" placeholder="Tu empresa"></div>
         <div class="f-group">
-          <label data-k="fs">Servicio de inter&#233;s</label>
+          <label for="fs" data-k="fs">Servicio de inter&#233;s</label>
           <select id="fs">
             <option value="" data-k="fso">Selecciona un servicio</option>
-            <option>Desarrollo Web</option><option>Soluciones de IA</option><option>App M&#243;vil</option>
-            <option>Cloud &amp; DevOps</option><option>Data &amp; Analytics</option><option>Ciberseguridad</option><option>Proyecto completo</option>
+            <option data-k="fso1">Desarrollo Web</option><option data-k="fso2">Soluciones de IA</option><option data-k="fso3">App M&#243;vil</option>
+            <option data-k="fso4">Cloud &amp; DevOps</option><option data-k="fso5">Data &amp; Analytics</option><option data-k="fso6">Ciberseguridad</option><option data-k="fso7">Proyecto completo</option>
           </select>
         </div>
-        <div class="f-group"><label data-k="fm">Mensaje</label><textarea id="fm" placeholder="Cu&#233;ntanos tu proyecto..."></textarea></div>
+        <div class="f-group"><label for="fm" data-k="fm">Mensaje</label><textarea id="fm" placeholder="Cu&#233;ntanos tu proyecto..."></textarea></div>
         <div class="f-feedback" id="fb"></div>
         <button class="btn-send" id="bs" data-k="fbtn">Enviar mensaje &#8594;</button>
       </div>
@@ -826,6 +829,7 @@ const T = {
     ci_hrs:'Disponibilidad',ci_hrsv:'24 horas · 7 días a la semana',
     ft:'Envíanos un mensaje',fn:'Nombre',fe:'Email',fc:'Empresa (opcional)',
     fs:'Servicio de interés',fso:'Selecciona un servicio',fm:'Mensaje',
+    fso1:'Desarrollo Web',fso2:'Soluciones de IA',fso3:'App Móvil',fso4:'Cloud & DevOps',fso5:'Data & Analytics',fso6:'Ciberseguridad',fso7:'Proyecto completo',
     fbtn:'Enviar mensaje →',fcp:'© 2026 JorZunex Solutions. Todos los derechos reservados.'
   },
   en:{
@@ -874,6 +878,7 @@ const T = {
     ci_hrs:'Availability',ci_hrsv:'24 hours · 7 days a week',
     ft:'Send us a message',fn:'Name',fe:'Email',fc:'Company (optional)',
     fs:'Service of interest',fso:'Select a service',fm:'Message',
+    fso1:'Web Development',fso2:'AI Solutions',fso3:'Mobile App',fso4:'Cloud & DevOps',fso5:'Data & Analytics',fso6:'Cybersecurity',fso7:'Full project',
     fbtn:'Send message →',fcp:'© 2026 JorZunex Solutions. All rights reserved.'
   }
 };
@@ -1036,12 +1041,17 @@ if(fineHover && !reduceMotion){
 
 /* ── MOBILE MENU ── */
 function toggleMenu() {
-  document.getElementById('navRight').classList.toggle('open');
-  document.getElementById('hamburger').classList.toggle('open');
+  const nr = document.getElementById('navRight');
+  const hb = document.getElementById('hamburger');
+  nr.classList.toggle('open');
+  hb.classList.toggle('open');
+  hb.setAttribute('aria-expanded', hb.classList.contains('open'));
 }
 document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => {
   document.getElementById('navRight').classList.remove('open');
-  document.getElementById('hamburger').classList.remove('open');
+  const hb = document.getElementById('hamburger');
+  hb.classList.remove('open');
+  hb.setAttribute('aria-expanded', 'false');
 }));
 
 /* ── NAV SCROLL + PROGRESS + TOP ── */
@@ -1083,6 +1093,7 @@ const cobs = new IntersectionObserver(es => {
 document.querySelectorAll('[data-counter]').forEach(s => cobs.observe(s));
 
 /* ── EMAILJS ── */
+window.addEventListener('load', () => { if(window.emailjs) emailjs.init('IXjM3kCPhMiyuPWWH'); });
 document.getElementById('bs').addEventListener('click', () => {
   const btn = document.getElementById('bs');
   const fb  = document.getElementById('fb');
@@ -1097,6 +1108,16 @@ document.getElementById('bs').addEventListener('click', () => {
     fb.textContent = lang==='es' ? '⚠️ Completa nombre, email y mensaje.' : '⚠️ Please fill name, email and message.';
     return;
   }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(from_email)) {
+    fb.style.cssText = 'display:block;background:rgba(255,80,80,.12);border:1px solid rgba(255,80,80,.3);color:#ff6b6b;padding:12px 16px;border-radius:10px;font-size:.86rem;margin-bottom:14px';
+    fb.textContent = lang==='es' ? '⚠️ El email no parece válido.' : '⚠️ That email does not look valid.';
+    return;
+  }
+  if(!window.emailjs) {
+    fb.style.cssText = 'display:block;background:rgba(255,80,80,.12);border:1px solid rgba(255,80,80,.3);color:#ff6b6b;padding:12px 16px;border-radius:10px;font-size:.86rem;margin-bottom:14px';
+    fb.textContent = lang==='es' ? '❌ Error al enviar. Verifica tu conexión.' : '❌ Send error. Check your connection.';
+    return;
+  }
   btn.textContent = lang==='es'?'Enviando...':'Sending...';
   btn.disabled = true;
 
@@ -1109,6 +1130,12 @@ document.getElementById('bs').addEventListener('click', () => {
       btn.style.color = '#fff';
       ['fn','fe','fc','fm'].forEach(id => document.getElementById(id).value = '');
       document.getElementById('fs').selectedIndex = 0;
+      setTimeout(() => {
+        btn.textContent = T[lang].fbtn;
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.disabled = false;
+      }, 5000);
     })
     .catch(() => {
       fb.style.cssText = 'display:block;background:rgba(255,80,80,.12);border:1px solid rgba(255,80,80,.3);color:#ff6b6b;padding:12px 16px;border-radius:10px;font-size:.86rem;margin-bottom:14px';
