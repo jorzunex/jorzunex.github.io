@@ -238,6 +238,7 @@ section{position:relative;z-index:2}
 
 /* ════════════════════ PROJECTS ════════════════════ */
 .proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+@media(min-width:1025px){.proj-grid>.proj-card:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 11px);justify-self:center}}
 .proj-card{position:relative;background:var(--card);border:1px solid var(--border);border-radius:24px;overflow:hidden;backdrop-filter:blur(14px);transition:transform .45s var(--ease),border-color .4s,box-shadow .45s;will-change:transform}
 .proj-card:hover{border-color:rgba(0,200,255,.38);box-shadow:0 28px 70px rgba(0,0,0,.5),0 0 50px rgba(0,200,255,.07)}
 .proj-chrome{display:flex;align-items:center;gap:6px;padding:11px 16px;background:rgba(5,10,22,.85);border-bottom:1px solid var(--border)}
@@ -675,6 +676,23 @@ footer{position:relative;z-index:2;border-top:1px solid var(--border);padding:54
         </div>
       </div>
 
+      <div class="proj-card tilt reveal d5">
+        <div class="proj-chrome"><i></i><i></i><i></i><span>pos-web-hazel.vercel.app</span></div>
+        <div class="proj-thumb">
+          <img src="assets/proj-pharmapos.jpg" alt="PharmaPOS" loading="lazy" decoding="async">
+          <div class="proj-thumb-overlay"></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-badge"><span></span><i data-k="prj_badge5">En producci&#243;n</i></div>
+          <p class="proj-title">PharmaPOS &mdash; <span data-k="p5st">Gesti&#243;n de Farmacias</span></p>
+          <p class="proj-desc" data-k="p5d">POS inteligente para farmacias en LATAM: ventas, inventario predictivo con IA, alertas de stock y facturaci&#243;n electr&#243;nica DIAN. La farmacia moderna, sin complicaciones.</p>
+          <div class="proj-tags">
+            <span class="tag">POS</span><span class="tag">IA</span><span class="tag">React</span><span class="tag">Vercel</span>
+          </div>
+          <a class="proj-link" href="https://pos-web-hazel.vercel.app/" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg> <span data-k="prj_live5">Ver en vivo</span></a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -788,7 +806,7 @@ const T = {
     sl_team:'El equipo',
     sl_prj:'Algunos de nuestros proyectos',pt_a:'Lo que',pt_b:'hemos construido',
     ss_prj:'Productos reales, con usuarios reales. Soluciones que llevamos a producción y siguen creciendo.',
-    prj_badge:'En producción',prj_badge2:'En producción',prj_badge3:'En producción',prj_badge4:'En producción',prj_live:'Ver en vivo',prj_live2:'Ver en vivo',prj_live3:'Ver en vivo',prj_live4:'Ver en vivo',
+    prj_badge:'En producción',prj_badge2:'En producción',prj_badge3:'En producción',prj_badge4:'En producción',prj_badge5:'En producción',prj_live:'Ver en vivo',prj_live2:'Ver en vivo',prj_live3:'Ver en vivo',prj_live4:'Ver en vivo',prj_live5:'Ver en vivo',
     p1st:'Plataforma de Gym',
     p1d:'Aplicación web completa para gestión de gimnasios: registro de clientes, planes personalizados, cálculo de IMC en tiempo real, seguimiento de progreso y panel de administración. Todo en una sola plataforma.',
     p2st:'Menú Digital con IA',
@@ -797,6 +815,8 @@ const T = {
     p3d:'Sistema integral para talleres de motos: órdenes de trabajo, clientes, inventario de repuestos y reportes en tiempo real. El taller completo, en una sola pantalla.',
     p4st:'Portal de Propiedades',
     p4d:'Portal inmobiliario premium para Colombia: búsqueda inteligente de propiedades, tours 3D inmersivos, contratos digitales y análisis de inversión. Compra, arrienda o vende sin fricciones.',
+    p5st:'Gestión de Farmacias',
+    p5d:'POS inteligente para farmacias en LATAM: ventas, inventario predictivo con IA, alertas de stock y facturación electrónica DIAN. La farmacia moderna, sin complicaciones.',
     cta_a:'¿Listo para construir algo',cta_b:'increíble',cta_c:'?',
     cta_d:'Tu próximo producto digital empieza con una conversación. Sin compromiso, sin costo inicial.',
     cta_btn:'Iniciar proyecto →',
@@ -834,7 +854,7 @@ const T = {
     sl_team:'The team',
     sl_prj:'Some of our projects',pt_a:'What we have',pt_b:'built',
     ss_prj:'Real products, with real users. Solutions we shipped to production that keep growing.',
-    prj_badge:'In production',prj_badge2:'In production',prj_badge3:'In production',prj_badge4:'In production',prj_live:'View live',prj_live2:'View live',prj_live3:'View live',prj_live4:'View live',
+    prj_badge:'In production',prj_badge2:'In production',prj_badge3:'In production',prj_badge4:'In production',prj_badge5:'In production',prj_live:'View live',prj_live2:'View live',prj_live3:'View live',prj_live4:'View live',prj_live5:'View live',
     p1st:'Gym Platform',
     p1d:'Complete web app for gym management: client registration, custom plans, real-time BMI calculation, progress tracking and a full admin panel. All in one platform.',
     p2st:'AI Digital Menu',
@@ -843,6 +863,8 @@ const T = {
     p3d:'All-in-one system for motorcycle workshops: work orders, customers, parts inventory and real-time reports. The whole workshop, on a single screen.',
     p4st:'Property Portal',
     p4d:'Premium real-estate portal for Colombia: smart property search, immersive 3D tours, digital contracts and investment analytics. Buy, rent or sell without friction.',
+    p5st:'Pharmacy Management',
+    p5d:'Smart POS for pharmacies in LATAM: sales, AI-powered predictive inventory, stock alerts and DIAN electronic invoicing. The modern pharmacy, hassle-free.',
     cta_a:'Ready to build something',cta_b:'incredible',cta_c:'?',
     cta_d:'Your next digital product starts with a conversation. No commitment, no upfront cost.',
     cta_btn:'Start a project →',
